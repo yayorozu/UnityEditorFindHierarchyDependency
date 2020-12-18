@@ -34,7 +34,7 @@ namespace Yorozu.EditorTool.FindHierarchyDependency
 			if (_src == null)
 				return;
 
-			EditorGUILayout.LabelField(_src.name);
+			EditorGUILayout.LabelField(_src.GetType().Name, EditorStyles.boldLabel);
 
 			foreach (var component in _hits)
 			{
